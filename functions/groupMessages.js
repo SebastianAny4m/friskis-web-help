@@ -985,10 +985,12 @@ const messages = [
 function groupMessages(messages, userEid) {
     const pad2 = (n) => String(n).padStart(2, '0');
     const formatYmd = (d) => `${d.getFullYear()}-${pad2(d.getMonth() + 1)}-${pad2(d.getDate())}`;
+    const formatYmdHm = (d) => `${formatYmd(d)} ${pad2(d.getHours())}:${pad2(d.getMinutes())}`;
     const WEEKDAYS = ['SÖN', 'MÅN', 'TIS', 'ONS', 'TOR', 'FRE', 'LÖR'];
     const formatDowHm = (d) => `${WEEKDAYS[d.getDay()]} ${pad2(d.getHours())}:${pad2(d.getMinutes())}`;
+    const minuteKey = (d) => `${d.getFullYear()}-${pad2(d.getMonth() + 1)}-${pad2(d.getDate())}T${pad2(d.getHours())}:${pad2(d.getMinutes())}`;
 
-    const sorted = messages.sort((a, b) => {
+    const sorted = [...messages].sort((a, b) => {
         const ac = new Date(a?.['@Metadata']?.created ?? 0).getTime();
         const bc = new Date(b?.['@Metadata']?.created ?? 0).getTime();
         return ac - bc;
@@ -1000,17 +1002,43 @@ function groupMessages(messages, userEid) {
 
     const output = [];
     let prevCreatedAt = null;
+    let currentGroup = null;
+
+    const withTotalReactions = (m) => {
+        const rc = (m && m.reactionsCounter) ? m.reactionsCounter : {};
+        const reactionsMap = (m && m.reactions && typeof m.reactions === 'object') ? m.reactions : null;
+        let total = 0;
+        if (reactionsMap) {
+            total = Object.values(reactionsMap).filter(Boolean).length;
+        } else if (rc && typeof rc === 'object') {
+            total = Object.values(rc).reduce((sum, v) => sum + (typeof v === 'number' ? v : 0), 0);
+        }
+        return {
+            ...m,
+            totalReactions: total,
+            reactionsCounter: {
+                ...(rc || {})
+            }
+        };
+    };
 
     if (sorted.length > 0) {
         const firstCreatedStr = sorted[0]?.['@Metadata']?.created;
         const firstCreatedAt = firstCreatedStr ? new Date(firstCreatedStr) : null;
         if (firstCreatedAt) {
             const isOlderThanSixDays = now.getTime() - firstCreatedAt.getTime() > SIX_DAYS_MS;
-            const sliverText = isOlderThanSixDays ? formatYmd(firstCreatedAt) : formatDowHm(firstCreatedAt);
+            const sliverText = isOlderThanSixDays ? formatYmdHm(firstCreatedAt) : formatDowHm(firstCreatedAt);
             output.push({ sliver: sliverText });
             prevCreatedAt = firstCreatedAt;
         }
     }
+
+    const flushGroup = () => {
+        if (!currentGroup) return;
+        const { userEid: _, ...publicGroup } = currentGroup;
+        output.push(publicGroup);
+        currentGroup = null;
+    };
 
     for (const msg of sorted) {
         const createdStr = msg?.['@Metadata']?.created;
@@ -1019,23 +1047,43 @@ function groupMessages(messages, userEid) {
         if (prevCreatedAt && createdAt) {
             const gap = createdAt.getTime() - prevCreatedAt.getTime();
             if (gap > ONE_MINUTE_MS) {
+                flushGroup();
                 const isOlderThanSixDays = now.getTime() - createdAt.getTime() > SIX_DAYS_MS;
-                const sliverText = isOlderThanSixDays ? formatYmd(createdAt) : formatDowHm(createdAt);
+                const sliverText = isOlderThanSixDays ? formatYmdHm(createdAt) : formatDowHm(createdAt);
                 output.push({ sliver: sliverText });
             }
         }
 
-        const isMine = msg?.createdBy?.eid === userEid;
-        output.push({
-            ...msg,
-            MyMessage: !!isMine,
-        });
+        const user = msg?.createdBy?.eid ?? null;
+        const isMine = user && user === userEid;
+        const mk = createdAt ? minuteKey(createdAt) : 'unknown';
+
+        if (
+            currentGroup &&
+            currentGroup.userEid === user &&
+            currentGroup.minuteKey === mk
+        ) {
+            currentGroup.messages.push(withTotalReactions({ ...msg, MyMessage: !!isMine }));
+            currentGroup.endAt = createdStr || currentGroup.endAt;
+        } else {
+            flushGroup();
+            currentGroup = {
+                group: true,
+                user: msg?.createdBy ? { ...msg.createdBy } : null,
+                userEid: user,
+                MyMessage: !!isMine,
+                minuteKey: mk,
+                startAt: createdStr || null,
+                endAt: createdStr || null,
+                messages: [withTotalReactions({ ...msg, MyMessage: !!isMine })]
+            };
+        }
 
         if (createdAt) prevCreatedAt = createdAt;
     }
-
+    flushGroup();
     return output;
 }
 
 const res = groupMessages(messages, '62065c26683f0a3260cdc419');
-console.log(res);
+console.log(JSON.stringify(res, null, 2));
