@@ -1,0 +1,1041 @@
+const messages = [
+    {
+        "@Attachments": [],
+        "@Metadata": {
+            "created": "2025-09-05T13:49:05.7148430+00:00",
+            "modified": "2025-09-08T07:00:31.2094634+00:00",
+            "version": 2,
+            "storageType": "Cosmos",
+            "branch": "main",
+            "type": "ChatMessage",
+            "branchStatus": "updated"
+        },
+        "eid": "ad74574c-432f-44a2-99e6-35c4a0c12b61",
+        "chatGroupEid": "5b8ebc21-ab95-40e8-9ef0-1c805b5d9108",
+        "body": "The quixk brown fox jumps ocer the fence in brown shoes",
+        "isEdited": false,
+        "createdBy": {
+            "eid": "b754e20b-a620-4edd-920e-47ca140dd9b2",
+            "displayName": "Test Any4m"
+        },
+        "readBy": {
+            "62065c26683f0a3260cdc419": "friskis1dev dev"
+        },
+        "reactions": {},
+        "reactionsCounter": {
+            "heart": null,
+            "bicep": null,
+            "smile": null,
+            "thumbsUp": null,
+            "confetti": null,
+            "crying": null
+        }
+    },
+    {
+        "@Attachments": [],
+        "@Metadata": {
+            "created": "2025-09-05T07:32:10.6334781+00:00",
+            "modified": "2025-09-08T07:00:31.2140130+00:00",
+            "version": 2,
+            "storageType": "Cosmos",
+            "branch": "main",
+            "type": "ChatMessage",
+            "branchStatus": "updated"
+        },
+        "eid": "c7528ad3-6ae6-49b5-8857-9c8d8a51ab54",
+        "chatGroupEid": "5b8ebc21-ab95-40e8-9ef0-1c805b5d9108",
+        "body": "Jrjr",
+        "isEdited": false,
+        "createdBy": {
+            "eid": "b754e20b-a620-4edd-920e-47ca140dd9b2",
+            "displayName": "Test Any4m"
+        },
+        "readBy": {
+            "62065c26683f0a3260cdc419": "friskis1dev dev"
+        },
+        "reactions": {},
+        "reactionsCounter": {
+            "heart": null,
+            "bicep": null,
+            "smile": null,
+            "thumbsUp": null,
+            "confetti": null,
+            "crying": null
+        }
+    },
+    {
+        "@Attachments": [],
+        "@Metadata": {
+            "created": "2025-09-05T07:31:37.4128055+00:00",
+            "modified": "2025-09-08T07:00:31.2183134+00:00",
+            "version": 2,
+            "storageType": "Cosmos",
+            "branch": "main",
+            "type": "ChatMessage",
+            "branchStatus": "updated"
+        },
+        "eid": "5e4ec029-352d-498b-bcc4-2c0f5535781c",
+        "chatGroupEid": "5b8ebc21-ab95-40e8-9ef0-1c805b5d9108",
+        "body": "Hej",
+        "isEdited": false,
+        "createdBy": {
+            "eid": "b754e20b-a620-4edd-920e-47ca140dd9b2",
+            "displayName": "Test Any4m"
+        },
+        "readBy": {
+            "62065c26683f0a3260cdc419": "friskis1dev dev"
+        },
+        "reactions": {},
+        "reactionsCounter": {
+            "heart": null,
+            "bicep": null,
+            "smile": null,
+            "thumbsUp": null,
+            "confetti": null,
+            "crying": null
+        }
+    },
+    {
+        "@Attachments": [],
+        "@Metadata": {
+            "created": "2025-09-05T07:31:16.9170803+00:00",
+            "modified": "2025-09-08T07:00:31.2146356+00:00",
+            "version": 2,
+            "storageType": "Cosmos",
+            "branch": "main",
+            "type": "ChatMessage",
+            "branchStatus": "updated"
+        },
+        "eid": "8df873b7-aede-45d4-ab6a-d9cf5b634b8a",
+        "chatGroupEid": "5b8ebc21-ab95-40e8-9ef0-1c805b5d9108",
+        "body": "Hej",
+        "isEdited": false,
+        "createdBy": {
+            "eid": "b754e20b-a620-4edd-920e-47ca140dd9b2",
+            "displayName": "Test Any4m"
+        },
+        "readBy": {
+            "62065c26683f0a3260cdc419": "friskis1dev dev"
+        },
+        "reactions": {},
+        "reactionsCounter": {
+            "heart": null,
+            "bicep": null,
+            "smile": null,
+            "thumbsUp": null,
+            "confetti": null,
+            "crying": null
+        }
+    },
+    {
+        "@Attachments": [],
+        "@Metadata": {
+            "created": "2025-09-04T18:05:25.5095563+00:00",
+            "modified": "2025-09-05T07:21:59.7339792+00:00",
+            "version": 2,
+            "storageType": "Cosmos",
+            "branch": "main",
+            "type": "ChatMessage",
+            "branchStatus": "updated"
+        },
+        "eid": "00524c07-7f73-48d9-9261-05b259bfc88d",
+        "chatGroupEid": "5b8ebc21-ab95-40e8-9ef0-1c805b5d9108",
+        "body": "Test",
+        "isEdited": false,
+        "createdBy": {
+            "eid": "b754e20b-a620-4edd-920e-47ca140dd9b2",
+            "displayName": "Test Any4m"
+        },
+        "readBy": {
+            "62065c26683f0a3260cdc419": "friskis1dev dev"
+        },
+        "reactions": {},
+        "reactionsCounter": {
+            "heart": null,
+            "bicep": null,
+            "smile": null,
+            "thumbsUp": null,
+            "confetti": null,
+            "crying": null
+        }
+    },
+    {
+        "@Attachments": [],
+        "@Metadata": {
+            "created": "2025-09-02T07:08:53.9213164+00:00",
+            "modified": "2025-09-02T08:51:40.0542661+00:00",
+            "version": 2,
+            "storageType": "Cosmos",
+            "branch": "main",
+            "type": "ChatMessage",
+            "branchStatus": "updated"
+        },
+        "eid": "11ace9bb-d9af-40ca-91db-f2d757b28fa5",
+        "chatGroupEid": "5b8ebc21-ab95-40e8-9ef0-1c805b5d9108",
+        "body": "Kskdkd",
+        "isEdited": false,
+        "createdBy": {
+            "eid": "b754e20b-a620-4edd-920e-47ca140dd9b2",
+            "displayName": "Test Any4m"
+        },
+        "readBy": {
+            "62065c26683f0a3260cdc419": "friskis1dev dev"
+        },
+        "reactions": {},
+        "reactionsCounter": {
+            "heart": null,
+            "bicep": null,
+            "smile": null,
+            "thumbsUp": null,
+            "confetti": null,
+            "crying": null
+        }
+    },
+    {
+        "@Attachments": [],
+        "@Metadata": {
+            "created": "2025-09-02T07:08:40.6724581+00:00",
+            "modified": "2025-09-02T08:51:40.0549470+00:00",
+            "version": 2,
+            "storageType": "Cosmos",
+            "branch": "main",
+            "type": "ChatMessage",
+            "branchStatus": "updated"
+        },
+        "eid": "f4e0d638-ea57-4105-8f6e-6d76ed3ed992",
+        "chatGroupEid": "5b8ebc21-ab95-40e8-9ef0-1c805b5d9108",
+        "body": "Test",
+        "isEdited": false,
+        "createdBy": {
+            "eid": "b754e20b-a620-4edd-920e-47ca140dd9b2",
+            "displayName": "Test Any4m"
+        },
+        "readBy": {
+            "62065c26683f0a3260cdc419": "friskis1dev dev"
+        },
+        "reactions": {},
+        "reactionsCounter": {
+            "heart": null,
+            "bicep": null,
+            "smile": null,
+            "thumbsUp": null,
+            "confetti": null,
+            "crying": null
+        }
+    },
+    {
+        "@Attachments": [],
+        "@Metadata": {
+            "created": "2025-09-01T07:35:24.9902512+00:00",
+            "modified": "2025-09-01T07:35:25.9837133+00:00",
+            "version": 2,
+            "storageType": "Cosmos",
+            "branch": "main",
+            "type": "ChatMessage",
+            "branchStatus": "updated"
+        },
+        "eid": "469f0af4-fd6b-4aea-a87d-dfbb39fbba30",
+        "chatGroupEid": "5b8ebc21-ab95-40e8-9ef0-1c805b5d9108",
+        "body": "2",
+        "isEdited": false,
+        "createdBy": {
+            "eid": "b754e20b-a620-4edd-920e-47ca140dd9b2",
+            "displayName": "Test Any4m"
+        },
+        "readBy": {
+            "62065c26683f0a3260cdc419": "friskis1dev dev"
+        },
+        "reactions": {},
+        "reactionsCounter": {
+            "heart": null,
+            "bicep": null,
+            "smile": null,
+            "thumbsUp": null,
+            "confetti": null,
+            "crying": null
+        }
+    },
+    {
+        "@Attachments": [],
+        "@Metadata": {
+            "created": "2025-09-01T07:33:38.8015889+00:00",
+            "modified": "2025-09-01T07:33:56.2281282+00:00",
+            "version": 4,
+            "storageType": "Cosmos",
+            "branch": "main",
+            "type": "ChatMessage",
+            "branchStatus": "updated"
+        },
+        "eid": "3d9b1792-14f2-4116-9b31-390fb4a6466e",
+        "chatGroupEid": "5b8ebc21-ab95-40e8-9ef0-1c805b5d9108",
+        "body": "Dkekejek\nDndjdkdkd\nDkdifofopwneofifbeidoeoeoene\nDndndkdkdkdkdkdkekek",
+        "isEdited": false,
+        "createdBy": {
+            "eid": "b754e20b-a620-4edd-920e-47ca140dd9b2",
+            "displayName": "Test Any4m"
+        },
+        "readBy": {
+            "62065c26683f0a3260cdc419": "friskis1dev dev"
+        },
+        "reactions": {
+            "62065c26683f0a3260cdc419": "thumbsUp",
+            "b754e20b-a620-4edd-920e-47ca140dd9b2": "crying"
+        },
+        "reactionsCounter": {
+            "heart": null,
+            "bicep": null,
+            "smile": null,
+            "thumbsUp": 1,
+            "confetti": null,
+            "crying": 1
+        }
+    },
+    {
+        "@Attachments": [],
+        "@Metadata": {
+            "created": "2025-09-01T07:27:28.6186848+00:00",
+            "modified": "2025-09-01T07:33:50.1671474+00:00",
+            "version": 3,
+            "storageType": "Cosmos",
+            "branch": "main",
+            "type": "ChatMessage",
+            "branchStatus": "updated"
+        },
+        "eid": "d7815038-ed6d-4390-bb57-70055c90a628",
+        "chatGroupEid": "5b8ebc21-ab95-40e8-9ef0-1c805b5d9108",
+        "body": "Ndkdodkzdk\nDjdjdidie\nDkfixifixififididi",
+        "isEdited": false,
+        "createdBy": {
+            "eid": "b754e20b-a620-4edd-920e-47ca140dd9b2",
+            "displayName": "Test Any4m"
+        },
+        "readBy": {
+            "62065c26683f0a3260cdc419": "friskis1dev dev"
+        },
+        "reactions": {
+            "b754e20b-a620-4edd-920e-47ca140dd9b2": "smile"
+        },
+        "reactionsCounter": {
+            "heart": null,
+            "bicep": null,
+            "smile": 1,
+            "thumbsUp": null,
+            "confetti": null,
+            "crying": null
+        }
+    },
+    {
+        "@Attachments": [],
+        "@Metadata": {
+            "created": "2025-09-01T07:27:14.0241476+00:00",
+            "modified": "2025-09-01T07:27:23.2095293+00:00",
+            "version": 2,
+            "storageType": "Cosmos",
+            "branch": "main",
+            "type": "ChatMessage",
+            "branchStatus": "updated"
+        },
+        "eid": "9d8789cd-19c4-4163-a221-82f3db9c0868",
+        "chatGroupEid": "5b8ebc21-ab95-40e8-9ef0-1c805b5d9108",
+        "body": "3",
+        "isEdited": false,
+        "createdBy": {
+            "eid": "62065c26683f0a3260cdc419",
+            "displayName": "friskis1dev dev"
+        },
+        "readBy": {
+            "b754e20b-a620-4edd-920e-47ca140dd9b2": "Test Any4m"
+        },
+        "reactions": {},
+        "reactionsCounter": {
+            "heart": null,
+            "bicep": null,
+            "smile": null,
+            "thumbsUp": null,
+            "confetti": null,
+            "crying": null
+        }
+    },
+    {
+        "@Attachments": [],
+        "@Metadata": {
+            "created": "2025-09-01T07:27:13.3803018+00:00",
+            "modified": "2025-09-01T07:27:23.2184431+00:00",
+            "version": 3,
+            "storageType": "Cosmos",
+            "branch": "main",
+            "type": "ChatMessage",
+            "branchStatus": "updated"
+        },
+        "eid": "4b44d185-43c4-4ff7-96db-67d33d9dd139",
+        "chatGroupEid": "5b8ebc21-ab95-40e8-9ef0-1c805b5d9108",
+        "body": "2",
+        "isEdited": false,
+        "createdBy": {
+            "eid": "62065c26683f0a3260cdc419",
+            "displayName": "friskis1dev dev"
+        },
+        "readBy": {
+            "b754e20b-a620-4edd-920e-47ca140dd9b2": "Test Any4m"
+        },
+        "reactions": {
+            "62065c26683f0a3260cdc419": "smile"
+        },
+        "reactionsCounter": {
+            "heart": null,
+            "bicep": null,
+            "smile": 1,
+            "thumbsUp": null,
+            "confetti": null,
+            "crying": null
+        }
+    },
+    {
+        "@Attachments": [],
+        "@Metadata": {
+            "created": "2025-09-01T07:27:11.2829069+00:00",
+            "modified": "2025-09-01T07:27:23.2099697+00:00",
+            "version": 2,
+            "storageType": "Cosmos",
+            "branch": "main",
+            "type": "ChatMessage",
+            "branchStatus": "updated"
+        },
+        "eid": "c24fbe7a-0f5b-42c1-8656-f7243bf70f5b",
+        "chatGroupEid": "5b8ebc21-ab95-40e8-9ef0-1c805b5d9108",
+        "body": "1",
+        "isEdited": false,
+        "createdBy": {
+            "eid": "62065c26683f0a3260cdc419",
+            "displayName": "friskis1dev dev"
+        },
+        "readBy": {
+            "b754e20b-a620-4edd-920e-47ca140dd9b2": "Test Any4m"
+        },
+        "reactions": {},
+        "reactionsCounter": {
+            "heart": null,
+            "bicep": null,
+            "smile": null,
+            "thumbsUp": null,
+            "confetti": null,
+            "crying": null
+        }
+    },
+    {
+        "@Attachments": [],
+        "@Metadata": {
+            "created": "2025-09-01T07:26:54.5286868+00:00",
+            "modified": "2025-09-01T07:27:16.7238853+00:00",
+            "version": 3,
+            "storageType": "Cosmos",
+            "branch": "main",
+            "type": "ChatMessage",
+            "branchStatus": "updated"
+        },
+        "eid": "347a4de7-6f42-4e4a-9270-f53d0089814b",
+        "chatGroupEid": "5b8ebc21-ab95-40e8-9ef0-1c805b5d9108",
+        "body": "Jdjdlwödndkdkdndodkdkenekdndnd\n\nDkdkdkdk\n\nKdkdkdkd",
+        "isEdited": false,
+        "createdBy": {
+            "eid": "b754e20b-a620-4edd-920e-47ca140dd9b2",
+            "displayName": "Test Any4m"
+        },
+        "readBy": {
+            "62065c26683f0a3260cdc419": "friskis1dev dev"
+        },
+        "reactions": {
+            "62065c26683f0a3260cdc419": "thumbsUp"
+        },
+        "reactionsCounter": {
+            "heart": null,
+            "bicep": null,
+            "smile": null,
+            "thumbsUp": 1,
+            "confetti": null,
+            "crying": null
+        }
+    },
+    {
+        "@Attachments": [],
+        "@Metadata": {
+            "created": "2025-09-01T07:26:46.5753990+00:00",
+            "modified": "2025-09-01T07:26:55.7412244+00:00",
+            "version": 2,
+            "storageType": "Cosmos",
+            "branch": "main",
+            "type": "ChatMessage",
+            "branchStatus": "updated"
+        },
+        "eid": "ab038363-c728-4ec8-a1da-ddd706dd00db",
+        "chatGroupEid": "5b8ebc21-ab95-40e8-9ef0-1c805b5d9108",
+        "body": "22212",
+        "isEdited": false,
+        "createdBy": {
+            "eid": "62065c26683f0a3260cdc419",
+            "displayName": "friskis1dev dev"
+        },
+        "readBy": {
+            "b754e20b-a620-4edd-920e-47ca140dd9b2": "Test Any4m"
+        },
+        "reactions": {},
+        "reactionsCounter": {
+            "heart": null,
+            "bicep": null,
+            "smile": null,
+            "thumbsUp": null,
+            "confetti": null,
+            "crying": null
+        }
+    },
+    {
+        "@Attachments": [],
+        "@Metadata": {
+            "created": "2025-09-01T07:26:36.2718853+00:00",
+            "modified": "2025-09-01T07:26:55.7604005+00:00",
+            "version": 2,
+            "storageType": "Cosmos",
+            "branch": "main",
+            "type": "ChatMessage",
+            "branchStatus": "updated"
+        },
+        "eid": "7c19bcab-1485-469d-ad44-4072da3d603f",
+        "chatGroupEid": "5b8ebc21-ab95-40e8-9ef0-1c805b5d9108",
+        "body": "test",
+        "isEdited": false,
+        "createdBy": {
+            "eid": "62065c26683f0a3260cdc419",
+            "displayName": "friskis1dev dev"
+        },
+        "readBy": {
+            "b754e20b-a620-4edd-920e-47ca140dd9b2": "Test Any4m"
+        },
+        "reactions": {},
+        "reactionsCounter": {
+            "heart": null,
+            "bicep": null,
+            "smile": null,
+            "thumbsUp": null,
+            "confetti": null,
+            "crying": null
+        }
+    },
+    {
+        "@Attachments": [],
+        "@Metadata": {
+            "created": "2025-09-01T07:26:15.1377105+00:00",
+            "modified": "2025-09-01T07:26:15.7560190+00:00",
+            "version": 2,
+            "storageType": "Cosmos",
+            "branch": "main",
+            "type": "ChatMessage",
+            "branchStatus": "updated"
+        },
+        "eid": "50ae99cc-2bb2-491b-a821-ff556a61501f",
+        "chatGroupEid": "5b8ebc21-ab95-40e8-9ef0-1c805b5d9108",
+        "body": "Jdjdkdlepzldbendodkdnene\nDndkdifid\nDjdififofofofofo",
+        "isEdited": false,
+        "createdBy": {
+            "eid": "b754e20b-a620-4edd-920e-47ca140dd9b2",
+            "displayName": "Test Any4m"
+        },
+        "readBy": {
+            "62065c26683f0a3260cdc419": "friskis1dev dev"
+        },
+        "reactions": {},
+        "reactionsCounter": {
+            "heart": null,
+            "bicep": null,
+            "smile": null,
+            "thumbsUp": null,
+            "confetti": null,
+            "crying": null
+        }
+    },
+    {
+        "@Attachments": [],
+        "@Metadata": {
+            "created": "2025-09-01T07:26:03.5492960+00:00",
+            "modified": "2025-09-01T07:26:16.3378911+00:00",
+            "version": 2,
+            "storageType": "Cosmos",
+            "branch": "main",
+            "type": "ChatMessage",
+            "branchStatus": "updated"
+        },
+        "eid": "1fb933bd-591a-438a-9d19-56761c624c8a",
+        "chatGroupEid": "5b8ebc21-ab95-40e8-9ef0-1c805b5d9108",
+        "body": "423432",
+        "isEdited": false,
+        "createdBy": {
+            "eid": "62065c26683f0a3260cdc419",
+            "displayName": "friskis1dev dev"
+        },
+        "readBy": {
+            "b754e20b-a620-4edd-920e-47ca140dd9b2": "Test Any4m"
+        },
+        "reactions": {},
+        "reactionsCounter": {
+            "heart": null,
+            "bicep": null,
+            "smile": null,
+            "thumbsUp": null,
+            "confetti": null,
+            "crying": null
+        }
+    },
+    {
+        "@Attachments": [],
+        "@Metadata": {
+            "created": "2025-09-01T07:26:02.3847414+00:00",
+            "modified": "2025-09-01T07:26:16.3424381+00:00",
+            "version": 2,
+            "storageType": "Cosmos",
+            "branch": "main",
+            "type": "ChatMessage",
+            "branchStatus": "updated"
+        },
+        "eid": "00ead7b5-4f91-4ae6-a2ba-6f75639c77ad",
+        "chatGroupEid": "5b8ebc21-ab95-40e8-9ef0-1c805b5d9108",
+        "body": "3213213",
+        "isEdited": false,
+        "createdBy": {
+            "eid": "62065c26683f0a3260cdc419",
+            "displayName": "friskis1dev dev"
+        },
+        "readBy": {
+            "b754e20b-a620-4edd-920e-47ca140dd9b2": "Test Any4m"
+        },
+        "reactions": {},
+        "reactionsCounter": {
+            "heart": null,
+            "bicep": null,
+            "smile": null,
+            "thumbsUp": null,
+            "confetti": null,
+            "crying": null
+        }
+    },
+    {
+        "@Attachments": [],
+        "@Metadata": {
+            "created": "2025-09-01T07:26:01.4344404+00:00",
+            "modified": "2025-09-01T07:26:16.3113165+00:00",
+            "version": 2,
+            "storageType": "Cosmos",
+            "branch": "main",
+            "type": "ChatMessage",
+            "branchStatus": "updated"
+        },
+        "eid": "90cfc1c5-c5b6-41c6-8f52-bc5c569b9179",
+        "chatGroupEid": "5b8ebc21-ab95-40e8-9ef0-1c805b5d9108",
+        "body": "3321",
+        "isEdited": false,
+        "createdBy": {
+            "eid": "62065c26683f0a3260cdc419",
+            "displayName": "friskis1dev dev"
+        },
+        "readBy": {
+            "b754e20b-a620-4edd-920e-47ca140dd9b2": "Test Any4m"
+        },
+        "reactions": {},
+        "reactionsCounter": {
+            "heart": null,
+            "bicep": null,
+            "smile": null,
+            "thumbsUp": null,
+            "confetti": null,
+            "crying": null
+        }
+    },
+    {
+        "@Attachments": [],
+        "@Metadata": {
+            "created": "2025-09-01T07:25:59.0634860+00:00",
+            "modified": "2025-09-01T07:26:16.3100636+00:00",
+            "version": 2,
+            "storageType": "Cosmos",
+            "branch": "main",
+            "type": "ChatMessage",
+            "branchStatus": "updated"
+        },
+        "eid": "4f07ddb9-fa57-4145-abcc-70e046d947ca",
+        "chatGroupEid": "5b8ebc21-ab95-40e8-9ef0-1c805b5d9108",
+        "body": "2",
+        "isEdited": false,
+        "createdBy": {
+            "eid": "62065c26683f0a3260cdc419",
+            "displayName": "friskis1dev dev"
+        },
+        "readBy": {
+            "b754e20b-a620-4edd-920e-47ca140dd9b2": "Test Any4m"
+        },
+        "reactions": {},
+        "reactionsCounter": {
+            "heart": null,
+            "bicep": null,
+            "smile": null,
+            "thumbsUp": null,
+            "confetti": null,
+            "crying": null
+        }
+    },
+    {
+        "@Attachments": [],
+        "@Metadata": {
+            "created": "2025-09-01T07:25:58.4178649+00:00",
+            "modified": "2025-09-01T07:26:16.3090842+00:00",
+            "version": 2,
+            "storageType": "Cosmos",
+            "branch": "main",
+            "type": "ChatMessage",
+            "branchStatus": "updated"
+        },
+        "eid": "95c5790f-43bb-40a8-baae-26a5641f6efd",
+        "chatGroupEid": "5b8ebc21-ab95-40e8-9ef0-1c805b5d9108",
+        "body": "1",
+        "isEdited": false,
+        "createdBy": {
+            "eid": "62065c26683f0a3260cdc419",
+            "displayName": "friskis1dev dev"
+        },
+        "readBy": {
+            "b754e20b-a620-4edd-920e-47ca140dd9b2": "Test Any4m"
+        },
+        "reactions": {},
+        "reactionsCounter": {
+            "heart": null,
+            "bicep": null,
+            "smile": null,
+            "thumbsUp": null,
+            "confetti": null,
+            "crying": null
+        }
+    },
+    {
+        "@Attachments": [],
+        "@Metadata": {
+            "created": "2025-09-01T07:25:19.5993758+00:00",
+            "modified": "2025-09-01T07:25:20.7970562+00:00",
+            "version": 2,
+            "storageType": "Cosmos",
+            "branch": "main",
+            "type": "ChatMessage",
+            "branchStatus": "updated"
+        },
+        "eid": "93bc0d9e-ea4b-40e5-b11d-1b08582c56cd",
+        "chatGroupEid": "5b8ebc21-ab95-40e8-9ef0-1c805b5d9108",
+        "body": "Joojobpbpjpkpkpkpk9kpnpn9npkk0k9k9k9kpkpk9",
+        "isEdited": false,
+        "createdBy": {
+            "eid": "b754e20b-a620-4edd-920e-47ca140dd9b2",
+            "displayName": "Test Any4m"
+        },
+        "readBy": {
+            "62065c26683f0a3260cdc419": "friskis1dev dev"
+        },
+        "reactions": {},
+        "reactionsCounter": {
+            "heart": null,
+            "bicep": null,
+            "smile": null,
+            "thumbsUp": null,
+            "confetti": null,
+            "crying": null
+        }
+    },
+    {
+        "@Attachments": [],
+        "@Metadata": {
+            "created": "2025-09-01T07:23:57.5293487+00:00",
+            "modified": "2025-09-01T07:24:20.3200048+00:00",
+            "version": 3,
+            "storageType": "Cosmos",
+            "branch": "main",
+            "type": "ChatMessage",
+            "branchStatus": "updated"
+        },
+        "eid": "b963a057-ac88-4c1f-a913-42200fed0f60",
+        "chatGroupEid": "5b8ebc21-ab95-40e8-9ef0-1c805b5d9108",
+        "body": "Kdjdkeozkdnekdpdkebeneke ekekeke e eidkdkekekebe e didkekekenenee e ekekekekekrkrrk",
+        "isEdited": false,
+        "createdBy": {
+            "eid": "b754e20b-a620-4edd-920e-47ca140dd9b2",
+            "displayName": "Test Any4m"
+        },
+        "readBy": {
+            "62065c26683f0a3260cdc419": "friskis1dev dev"
+        },
+        "reactions": {
+            "62065c26683f0a3260cdc419": "smile"
+        },
+        "reactionsCounter": {
+            "heart": null,
+            "bicep": null,
+            "smile": 1,
+            "thumbsUp": null,
+            "confetti": null,
+            "crying": null
+        }
+    },
+    {
+        "@Attachments": [],
+        "@Metadata": {
+            "created": "2025-09-01T07:23:13.1587938+00:00",
+            "modified": "2025-09-01T07:23:45.8571120+00:00",
+            "version": 3,
+            "storageType": "Cosmos",
+            "branch": "main",
+            "type": "ChatMessage",
+            "branchStatus": "updated"
+        },
+        "eid": "5d2923ac-4d2c-4c6a-a9b9-ccf5a7a6c9e4",
+        "chatGroupEid": "5b8ebc21-ab95-40e8-9ef0-1c805b5d9108",
+        "body": "Djdmfkoxfkfnnekdofkf",
+        "isEdited": false,
+        "createdBy": {
+            "eid": "b754e20b-a620-4edd-920e-47ca140dd9b2",
+            "displayName": "Test Any4m"
+        },
+        "readBy": {
+            "62065c26683f0a3260cdc419": "friskis1dev dev"
+        },
+        "reactions": {
+            "62065c26683f0a3260cdc419": "heart"
+        },
+        "reactionsCounter": {
+            "heart": 1,
+            "bicep": null,
+            "smile": null,
+            "thumbsUp": null,
+            "confetti": null,
+            "crying": null
+        }
+    },
+    {
+        "@Attachments": [],
+        "@Metadata": {
+            "created": "2025-09-01T07:22:53.0469685+00:00",
+            "modified": "2025-09-01T07:23:48.5284047+00:00",
+            "version": 3,
+            "storageType": "Cosmos",
+            "branch": "main",
+            "type": "ChatMessage",
+            "branchStatus": "updated"
+        },
+        "eid": "7b569a62-2736-42fc-995f-a510fe5a7ef8",
+        "chatGroupEid": "5b8ebc21-ab95-40e8-9ef0-1c805b5d9108",
+        "body": "3",
+        "isEdited": false,
+        "createdBy": {
+            "eid": "b754e20b-a620-4edd-920e-47ca140dd9b2",
+            "displayName": "Test Any4m"
+        },
+        "readBy": {
+            "62065c26683f0a3260cdc419": "friskis1dev dev"
+        },
+        "reactions": {
+            "62065c26683f0a3260cdc419": "thumbsUp"
+        },
+        "reactionsCounter": {
+            "heart": null,
+            "bicep": null,
+            "smile": null,
+            "thumbsUp": 1,
+            "confetti": null,
+            "crying": null
+        }
+    },
+    {
+        "@Attachments": [],
+        "@Metadata": {
+            "created": "2025-09-01T07:22:52.4257478+00:00",
+            "modified": "2025-09-01T07:23:50.9195064+00:00",
+            "version": 3,
+            "storageType": "Cosmos",
+            "branch": "main",
+            "type": "ChatMessage",
+            "branchStatus": "updated"
+        },
+        "eid": "4aec87da-18dc-438d-939e-112c86c05bdb",
+        "chatGroupEid": "5b8ebc21-ab95-40e8-9ef0-1c805b5d9108",
+        "body": "2",
+        "isEdited": false,
+        "createdBy": {
+            "eid": "b754e20b-a620-4edd-920e-47ca140dd9b2",
+            "displayName": "Test Any4m"
+        },
+        "readBy": {
+            "62065c26683f0a3260cdc419": "friskis1dev dev"
+        },
+        "reactions": {
+            "62065c26683f0a3260cdc419": "smile"
+        },
+        "reactionsCounter": {
+            "heart": null,
+            "bicep": null,
+            "smile": 1,
+            "thumbsUp": null,
+            "confetti": null,
+            "crying": null
+        }
+    },
+    {
+        "@Attachments": [],
+        "@Metadata": {
+            "created": "2025-09-01T07:22:51.7671512+00:00",
+            "modified": "2025-09-01T07:23:53.2804514+00:00",
+            "version": 3,
+            "storageType": "Cosmos",
+            "branch": "main",
+            "type": "ChatMessage",
+            "branchStatus": "updated"
+        },
+        "eid": "9a64d65c-a875-45eb-8c75-112a75f3dc25",
+        "chatGroupEid": "5b8ebc21-ab95-40e8-9ef0-1c805b5d9108",
+        "body": "1",
+        "isEdited": false,
+        "createdBy": {
+            "eid": "b754e20b-a620-4edd-920e-47ca140dd9b2",
+            "displayName": "Test Any4m"
+        },
+        "readBy": {
+            "62065c26683f0a3260cdc419": "friskis1dev dev"
+        },
+        "reactions": {
+            "62065c26683f0a3260cdc419": "confetti"
+        },
+        "reactionsCounter": {
+            "heart": null,
+            "bicep": null,
+            "smile": null,
+            "thumbsUp": null,
+            "confetti": 1,
+            "crying": null
+        }
+    },
+    {
+        "@Attachments": [],
+        "@Metadata": {
+            "created": "2025-09-01T07:18:11.3149848+00:00",
+            "modified": "2025-09-01T07:18:12.2437581+00:00",
+            "version": 2,
+            "storageType": "Cosmos",
+            "branch": "main",
+            "type": "ChatMessage",
+            "branchStatus": "updated"
+        },
+        "eid": "f6f850be-70df-4ffa-a3cf-fe8341066266",
+        "chatGroupEid": "5b8ebc21-ab95-40e8-9ef0-1c805b5d9108",
+        "body": "1122",
+        "isEdited": false,
+        "createdBy": {
+            "eid": "62065c26683f0a3260cdc419",
+            "displayName": "friskis1dev dev"
+        },
+        "readBy": {
+            "b754e20b-a620-4edd-920e-47ca140dd9b2": "Test Any4m"
+        },
+        "reactions": {},
+        "reactionsCounter": {
+            "heart": null,
+            "bicep": null,
+            "smile": null,
+            "thumbsUp": null,
+            "confetti": null,
+            "crying": null
+        }
+    },
+    {
+        "@Attachments": [],
+        "@Metadata": {
+            "created": "2025-09-01T07:15:18.0493744+00:00",
+            "modified": "2025-09-01T07:16:03.1610604+00:00",
+            "version": 3,
+            "storageType": "Cosmos",
+            "branch": "main",
+            "type": "ChatMessage",
+            "branchStatus": "updated"
+        },
+        "eid": "302c0568-75e5-4b4f-8abe-11451dc6c70f",
+        "chatGroupEid": "5b8ebc21-ab95-40e8-9ef0-1c805b5d9108",
+        "body": "Test",
+        "isEdited": false,
+        "createdBy": {
+            "eid": "62065c26683f0a3260cdc419",
+            "displayName": "friskis1dev dev"
+        },
+        "readBy": {
+            "b754e20b-a620-4edd-920e-47ca140dd9b2": "Test Any4m"
+        },
+        "reactions": {
+            "b754e20b-a620-4edd-920e-47ca140dd9b2": "crying"
+        },
+        "reactionsCounter": {
+            "heart": null,
+            "bicep": null,
+            "smile": null,
+            "thumbsUp": null,
+            "confetti": null,
+            "crying": 1
+        }
+    }
+]
+
+function groupMessages(messages, userEid) {
+    const pad2 = (n) => String(n).padStart(2, '0');
+    const formatYmd = (d) => `${d.getFullYear()}-${pad2(d.getMonth() + 1)}-${pad2(d.getDate())}`;
+    const WEEKDAYS = ['SÖN', 'MÅN', 'TIS', 'ONS', 'TOR', 'FRE', 'LÖR'];
+    const formatDowHm = (d) => `${WEEKDAYS[d.getDay()]} ${pad2(d.getHours())}:${pad2(d.getMinutes())}`;
+
+    const sorted = messages.sort((a, b) => {
+        const ac = new Date(a?.['@Metadata']?.created ?? 0).getTime();
+        const bc = new Date(b?.['@Metadata']?.created ?? 0).getTime();
+        return ac - bc;
+    });
+
+    const ONE_MINUTE_MS = 60 * 1000;
+    const SIX_DAYS_MS = 6 * 24 * 60 * 60 * 1000;
+    const now = new Date();
+
+    const output = [];
+    let prevCreatedAt = null;
+
+    if (sorted.length > 0) {
+        const firstCreatedStr = sorted[0]?.['@Metadata']?.created;
+        const firstCreatedAt = firstCreatedStr ? new Date(firstCreatedStr) : null;
+        if (firstCreatedAt) {
+            const isOlderThanSixDays = now.getTime() - firstCreatedAt.getTime() > SIX_DAYS_MS;
+            const sliverText = isOlderThanSixDays ? formatYmd(firstCreatedAt) : formatDowHm(firstCreatedAt);
+            output.push({ sliver: sliverText });
+            prevCreatedAt = firstCreatedAt;
+        }
+    }
+
+    for (const msg of sorted) {
+        const createdStr = msg?.['@Metadata']?.created;
+        const createdAt = createdStr ? new Date(createdStr) : null;
+
+        if (prevCreatedAt && createdAt) {
+            const gap = createdAt.getTime() - prevCreatedAt.getTime();
+            if (gap > ONE_MINUTE_MS) {
+                const isOlderThanSixDays = now.getTime() - createdAt.getTime() > SIX_DAYS_MS;
+                const sliverText = isOlderThanSixDays ? formatYmd(createdAt) : formatDowHm(createdAt);
+                output.push({ sliver: sliverText });
+            }
+        }
+
+        const isMine = msg?.createdBy?.eid === userEid;
+        output.push({
+            ...msg,
+            MyMessage: !!isMine,
+        });
+
+        if (createdAt) prevCreatedAt = createdAt;
+    }
+
+    return output;
+}
+
+const res = groupMessages(messages, '62065c26683f0a3260cdc419');
+console.log(res);
