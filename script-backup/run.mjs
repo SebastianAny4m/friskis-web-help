@@ -3,9 +3,9 @@ import fs from 'fs';
 import path from 'path';
 
 const runBackup = async () => {
-  const collectionsToDownload = ['user']
+  const collectionsToDownload = ['user', 'CommunicationGroup','Comment', 'ChatGroup', 'ChatMessage', 'NewsPostUmbraco']
 
-  const backupDir = './backups'
+  const backupDir = './script-backup/backups'
   const timestamp = new Date().toISOString().replace(/[:.]/g, '-').slice(0, 16)
   fs.mkdirSync(backupDir, { recursive: true });
 
