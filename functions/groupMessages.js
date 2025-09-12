@@ -1008,14 +1008,21 @@ function groupMessages(messages, userEid) {
         const rc = (m && m.reactionsCounter) ? m.reactionsCounter : {};
         const reactionsMap = (m && m.reactions && typeof m.reactions === 'object') ? m.reactions : null;
         let total = 0;
+        let reactionTypes = 0;
+        
         if (reactionsMap) {
             total = Object.values(reactionsMap).filter(Boolean).length;
+            const uniqueTypes = new Set(Object.values(reactionsMap).filter(Boolean));
+            reactionTypes = uniqueTypes.size;
         } else if (rc && typeof rc === 'object') {
             total = Object.values(rc).reduce((sum, v) => sum + (typeof v === 'number' ? v : 0), 0);
+            reactionTypes = Object.values(rc).filter(v => v !== null && v > 0).length;
         }
+        
         return {
             ...m,
             totalReactions: total,
+            reactionTypesCount: reactionTypes,
             reactionsCounter: {
                 ...(rc || {})
             }
