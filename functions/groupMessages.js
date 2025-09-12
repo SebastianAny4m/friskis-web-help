@@ -1009,7 +1009,7 @@ function groupMessages(messages, userEid) {
         const reactionsMap = (m && m.reactions && typeof m.reactions === 'object') ? m.reactions : null;
         let total = 0;
         let reactionTypes = 0;
-        
+
         if (reactionsMap) {
             total = Object.values(reactionsMap).filter(Boolean).length;
             const uniqueTypes = new Set(Object.values(reactionsMap).filter(Boolean));
@@ -1018,7 +1018,7 @@ function groupMessages(messages, userEid) {
             total = Object.values(rc).reduce((sum, v) => sum + (typeof v === 'number' ? v : 0), 0);
             reactionTypes = Object.values(rc).filter(v => v !== null && v > 0).length;
         }
-        
+
         return {
             ...m,
             totalReactions: total,
@@ -1053,7 +1053,8 @@ function groupMessages(messages, userEid) {
 
         if (prevCreatedAt && createdAt) {
             const gap = createdAt.getTime() - prevCreatedAt.getTime();
-            if (gap > ONE_MINUTE_MS) {
+            const minuteChanged = minuteKey(prevCreatedAt) !== minuteKey(createdAt);
+            if (minuteChanged || gap > ONE_MINUTE_MS) {
                 flushGroup();
                 const isOlderThanSixDays = now.getTime() - createdAt.getTime() > SIX_DAYS_MS;
                 const sliverText = isOlderThanSixDays ? formatYmdHm(createdAt) : formatDowHm(createdAt);
