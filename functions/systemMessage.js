@@ -1,0 +1,63 @@
+const membersBefore = [
+    {
+        "eid": "62065c26683f0a3260cdc419",
+        "displayName": "friskis1dev dev"
+    }
+]
+
+
+
+const membersAfter = [
+    {
+        "eid": "627013f0aa24b030fcc00111",
+        "displayName": "Daniel Nilsson"
+    },
+    {
+        "eid": "62625b69bf151d74012ac461",
+        "displayName": "Mattias Wising Bonde"
+    },
+    {
+        "eid": "624c0454bd2b0c4d51b34558",
+        "displayName": "Therese Svedberg"
+    },
+    {
+        "eid": "62065c26683f0a3260cdc419",
+        "displayName": "friskis1dev dev"
+    }
+]
+
+
+
+function createSystemMessageAddedUsers(membersBefore, membersAfter, actor) {
+    const date = new Date();
+
+    function joinNames(names) {
+        if (!Array.isArray(names) || names.length === 0) return '';
+        if (names.length === 1) return names[0];
+        if (names.length === 2) return `${names[0]} och ${names[1]}`;
+        return `${names.slice(0, names.length - 1).join(', ')} och ${names[names.length - 1]}`;
+    }
+
+    function formatTimestamp(date = new Date()) {
+        const d = date instanceof Date ? date : new Date(date);
+        const pad = (n) => String(n).padStart(2, '0');
+        const yyyy = d.getFullYear();
+        const MM = pad(d.getMonth() + 1);
+        const dd = pad(d.getDate());
+        const HH = pad(d.getHours());
+        const mm = pad(d.getMinutes());
+        return `${yyyy}-${MM}-${dd} ${HH}:${mm}`;
+    }
+
+    const beforeSet = new Set((membersBefore || []).map(m => m && m.eid));
+    const added = (membersAfter || []).filter(m => m && !beforeSet.has(m.eid));
+    const addedNames = added.map(m => m.displayName).filter(Boolean);
+    const namesStr = joinNames(addedNames);
+    if (!namesStr) return '';
+    const ts = formatTimestamp(date);
+    return `${namesStr} blev tillagd i chatten ${ts} av ${actor}`;
+}
+
+
+const sustemString = createSystemMessageAddedUsers(membersBefore, membersAfter, 'Sebbe');
+console.log(sustemString);

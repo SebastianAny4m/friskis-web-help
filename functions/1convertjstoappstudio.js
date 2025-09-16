@@ -34,4 +34,4 @@ function convert(fileNames) {
     }
 }
 
-convert(['groupMessages.js', 'findGroupWithMembers.js']);
+convert(['groupMessages.js', 'findGroupWithMembers.js', 'systemMessage.js']);
