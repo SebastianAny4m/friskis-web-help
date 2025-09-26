@@ -3,7 +3,7 @@ import fs from 'fs';
 import path from 'path';
 
 const runBackup = async () => {
-  const collectionsToDownload = ['user', 'CommunicationGroup','Comment', 'ChatGroup', 'ChatMessage', 'NewsPostUmbraco']
+  const collectionsToDownload = ['user', 'CommunicationGroup', 'CommunicationGroupContent', 'Comment', 'ChatGroup', 'ChatMessage', 'NewsPostUmbraco']
 
   const backupDir = './script-backup/backups'
   const timestamp = new Date().toISOString().replace(/[:.]/g, '-').slice(0, 16)
